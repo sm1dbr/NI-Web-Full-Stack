@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html, body{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-image: url(./img/back-dia-transp93.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h5, p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+
+h5{
+    font-weight: normal;
+    font-size: medium;
+}
+
+/* Coisas do Menu/Header */
+
+#logotipo{
+    width: 400px;
+}
+
+.logo{
+    width: 42%;
+    margin-left: 130px;
+}
+
+header #cabecalho{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-image: url(./img/menus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 1280px 150px;
+}
+
+#cabecalho nav{
+    align-items: center;
+}
+
+#cabecalho nav a h3{
+    display: inline-block;
+    padding: 0px 15px;
+    transition: all 0.3s ease 0s;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    color: #592A2A;
+}
+
+#cabecalho nav a h3:hover{
+    color:#8F451E;
+}
+
+#cabecalho nav a:visited{
+    color: #592A2A;
+}
+
+/* Fim das coisas do Menu/Header */
+
+/* ------ CONFIGURAÇÃO DOS GRIDS ------ */
+
+
+/* ------ CONFIGURAÇÃO DO MAPA ------ */
+#mapa{
+    display: grid;
+    grid-template: 30vh 30vh 30vh/1fr 1fr 1fr;
+    grid-template-areas: 
+                        "tm tm tm"
+                        "im dm dm";
+    gap: 2vh
+}
+
+.titMapa{
+    grid-area: tm;
+}
+
+.imgMapa{
+    grid-area: im;
+}
+
+.descMapa{
+    grid-area: dm;
+}
+
+/* ------ FIM CONFIGURAÇÃO DO MAPA ------ */
+
+/* ------ CONFIGURAÇÃO DOS MORADORES ------ */
+#moradores{
+    display: grid;
+    grid-template: 25vh 5vh 25vh 25vh/ 
+                1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+                        "mc mc mc mc mc"
+                        "pmc pmc pmc pmc pmc"
+                        "m1 m2 m3 m4 m5"
+                        "m6 m7 m8 m9 m10";
+    gap: 9vh 0vh;  
+}
+
+.titMC{
+    grid-area: mc;
+}
+
+.pMC{
+    grid-area: pmc;
+}
+
+.m1{
+    grid-area: m1;
+}
+
+.m2{
+    grid-area: m2;
+}
+
+.m3{
+    grid-area: m3;
+}
+
+.m4{
+    grid-area: m4;
+}
+
+.m5{
+    grid-area: m5;
+}
+
+.m6{
+    grid-area: m6;
+}
+
+.m7{
+    grid-area: m7;
+}
+
+.m8{
+    grid-area: m8;
+}
+
+.m9{
+    grid-area: m9;
+}
+
+.m10{
+    grid-area: m10;
+}
+/* ------ FIM CONFIGURAÇÃO DOS MORADORES ------ */
+
+/* ------ CONFIGURAÇÃO DA FAZENDA ------ */
+#fazenda{
+    display: grid;
+    grid-template: 30vh 45vh 45vh/1fr 1fr 1fr;
+    grid-template-areas: 
+                        "fa fa fa"
+                        "ca fe co"
+                        "an pl pe";
+    gap: 3vh;
+    background-image: url(./img/fundos-fazenda.png);
+    background-repeat: no-repeat;
+}
+
+.titFaz{
+    grid-area: fa;
+}
+
+.casa{
+    grid-area: ca;
+}
+
+.ferr{
+    grid-area: fe;
+}
+
+.const{
+    grid-area: co;
+}
+
+.anim{
+    grid-area: an;
+}
+
+.plant{
+    grid-area: pl;
+}
+
+.pesc{
+    grid-area: pe;
+}
+
+/* ------ FIM CONFIGURAÇÃO DA FAZENDA ------ */
+
+/* ------ CONFIGURAÇÃO DO RESTO ------ */
+
+#mais{
+    display: grid;
+    grid-template: 30vh 10vh 50vh 30vh/1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+                        "em em em em em em"
+                        "d d d d d d"
+                        "img1 txt1 txt1 img2 txt2 txt2"
+                        "img3 txt3 img4 txt4 img5 txt5";
+    gap: 3vh;
+    background-color: rgba(242, 227, 179, 75%);
+    margin: 50px;
+}
+
+.emais{
+    grid-area: em;
+}
+
+.descricao{
+    grid-area: d;
+}
+
+.img1{
+    grid-area: img1;
+}
+
+.txt1{
+    grid-area: txt1;
+}
+
+.img2{
+    grid-area: img2;
+}
+
+.txt2{
+    grid-area: txt2;
+}
+
+.img3{
+    grid-area: img3;
+}
+
+.txt3{
+    grid-area: txt3;
+}
+
+.img4{
+    grid-area: img4;
+}
+
+.txt4{
+    grid-area: txt4;
+}
+
+.img5{
+    grid-area: img5;
+}
+
+.txt5{
+    grid-area: txt5;
+}
+/* ------ FIM CONFIGURAÇÃO DOS GRIDS ------ */
+
+/* CONFIGURAÇÃO DO FUNDO DE CADA SUBTÍTULO*/
+.titMapa, .titMC, .titFaz, .emais{
+    background-image: url(./img/menus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 1100px 100px;
+}
+
+.titMapa, .titMC, .titFaz, .emais{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 30px;
+    color: #8F451E;
+}
+
+/* FIM DA CONFIGURAÇÃO DE SUBTÍTULOS */
+
+/*   CONFIGURAÇÃO CONTEÚDO DO SLIDER   */
+
+/*SLIDE GALERIA SNAP*/
+
+.slidesSnap {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: none;
+    justify-content: start;
+  }
+  .slidesSnap > img {
+    scroll-snap-align: start;
+    max-width: 400px;
+    height: 300px;
+    background-attachment: fixed;
+    object-fit: cover;
+  }
+  .slidesSnap img {
+    border-radius: 10px;
+  }
+  .slidesSnap::-webkit-scrollbar {
+    display: none;
+  }
+  /*SLIDE GALERIA AUTOMATICO*/
+  .slider {
+    max-width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 50%);
+  }
+  .slides {
+    width: 500%;
+    height: auto;
+    display: flex;
+  }
+  .slides input {
+    display: none;
+  }
+  
+  .slide {
+    transition: 2s;
+    width: 20%;
+  }
+  .slide img {
+    width: 1000px;
+    height: 500px;
+  }
+  
+  /*slide manual*/
+  .navigation-manual {
+    position: absolute;
+    width: 1000px;
+    margin-top: -43px;
+    display: flex;
+    justify-content: center;
+    margin-left: 130px;
+  }
+  .manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .manual-btn:not(:first-child) {
+    margin-left: 40px;
+  }
+  .manual-btn:hover {
+    background-color: red;
+  }
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -20%;
+  }
+  #radio3:checked ~ .first {
+    margin-left: -40%;
+  }
+  #radio4:checked ~ .first {
+    margin-left: -60%;
+  }
+  /*slide automatic navigation*/
+  
+  .navigation-auto {
+    position: absolute;
+    display: none;
+    width: 1000px;
+    justify-content: center;
+    margin-top: -28px;
+  }
+  
+  .navigation-auto div {
+    border: 2px solid #fbfbfb;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  .navigation-auto div:not(:first-child) {
+    margin-left: 40px;
+  }
+  #radio1:checked, .navigation-auto .auto-btn1 {
+    background-color: green;
+
+  }
+  #radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #d8d8d8;
+  }
+  #radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #d8d8d8;
+  }
+  #radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #d8d8d8;
+  }
+
+/*   FIM DA CONFIGURAÇÃO CONTEÚDO DO SLIDER   */
+
+/*   CONFIGURAÇÃO CONTEÚDO DO MAPA   */
+
+.imgMapa{
+    margin-left: 150px;
+}
+
+.descMapa{
+    margin-right: 70px;
+    font-size: large;
+}
+
+/*   FIM DA CONFIGURAÇÃO CONTEÚDO DO MAPA   */
+
+/*   CONFIGURAÇÃO CONTEÚDO DOS MORADORES   */
+
+
+.m1, .m2, .m3, .m4, .m5, .m6, .m7, .m8, .m9, .m10{
+    margin-left: 30px;
+    width: 150px;
+    height: 150px;
+}
+
+a img{
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+}
+
+.titMC{
+    height: 83px;
+}
+
+h4{
+    text-align: center;
+    margin: 3px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#moradores h4 a{
+    text-decoration: none;
+}
+
+#moradores a:link, #moradores a:visited{
+    color: #8F451E;
+}
+
+/*   FIM DA CONFIGURAÇÃO CONTEÚDO DOS MORADORES   */
+
+
+/*   CONFIGURAÇÃO CONTEÚDO DO RESTANTE   */
+
+h5{
+    margin: 0;
+}
+
+#mais img{
+    margin-left: 30px;
+}
+
+
+#mais .txt1, .txt2{
+    height: 250px;
+    text-align: center;
+}
+
+#mais p a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    text-align: center;
+}
+
+#mais p a:link, #mais p a:visited{
+    color: #8F451E;
+}
+
+/*   FIM DA CONFIGURAÇÃO DO RESTANTE   */
+
+/*   FIM DA CONFIGURAÇÃO DO FOOTER   */
+
+footer{
+    background-color: rgba(132, 191, 73, 87%);
+    height: 30px;
+}
+
+footer p{
+    text-align: center;
+    padding-top: 5px;
+    font-size: small;
+}
+
+/*   FIM DA CONFIGURAÇÃO DO FOOTER   */
+
+/*   CONFIGURAÇÃO DO MODAL   */
+
+.modal{
+    position: fixed;
+    top: 3%;
+    left: 15%;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    opacity: 0;
+    z-index: 9;
+    -webkit-transition: opacity 300ms ease-in;
+    -moz-transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
+    pointer-events: none;
+}
+
+.modal:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.fechar{
+    position: absolute;
+    right: 3px;
+    top: -1px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+.fechar img{
+    width: 30px;
+    height: 30px;
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+}
+
+/*   FIM DA CONFIGURAÇÃO DO MODAL   */
+
+ 
